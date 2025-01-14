@@ -1,0 +1,27 @@
+#home{
+    background-image: url('../assets/bgloading1.jpg'); /* Replace with your image URL */
+    background-size:cover;
+    /* background-position:; */
+    height: 120vh;
+    display: flex;
+    /* justify-content: left; */
+    align-items: center;
+    /* width: 100%; */
+    
+}
+
+@media (max-width: 768px) {
+    #home{
+        height: 90vh; /* Reduce height for smaller screens */
+        padding: 1rem;
+        background-position: top;
+    }
+}
+
+@media (max-width: 480px) {
+    #home{
+        height: 60vh;
+        padding: 0.5rem;
+        text-align: center; /* Center text for better readability */
+    }
+}
