@@ -72,3 +72,4 @@ const imageCardDragStarted=(e,dragImageDetails)=>{
 }
 
 export default VideoCard
+

@@ -48,16 +48,16 @@ const handleUploadImage=async()=>{
         <button onClick={handleShow} className='btn btn-warning ms-3 rounded-circle fw-bolder fs-5'>+</button>
     </div>
     {/*Modal*/}
-  <Modal
+  <Modal centered className='text-black ' 
   show={show}
   onHide={handleClose}
   backdrop="static"
   keyboard={false}
 >
   <Modal.Header closeButton>
-    <Modal.Title>Upload Dress Details!!!</Modal.Title>
+    <Modal.Title className='text-black'>Upload Dress Details!!!</Modal.Title>
   </Modal.Header>
-  <Modal.Body>
+  <Modal.Body  >
     {/* floating label */}
     <div className='border rounded p-3'>
     <FloatingLabel controlId="floatingCaption" label="product Name">

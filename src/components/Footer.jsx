@@ -159,6 +159,7 @@ import logo1 from "../assets/logo.png";
 
 const Footer = () => {
   return (
+    <footer className='bg-warning text-black py-3 mt-2'>
     <div style={{height:'300px'}} className='mt-5 container w-100'>
       <div className='d-flex justify-content-between'>
         {/* intro */}
@@ -174,43 +175,44 @@ const Footer = () => {
           
           {/* <h5><i class="fa-solid fa-music me-3"></i>
           Style Loft</h5> */}
-          <p> Style Loft team and our passionate contributors, ensuring a seamless shopping experience for our valued customers.</p>
-          <p>Code licensed MIT, docs CC BY 3.0.</p>
-          <p>Currently v5.3.3.     </p>
+          <p style={{color:'black'}}> Style Loft team and our passionate contributors, ensuring a seamless shopping experience for our valued customers.</p>
+          <p style={{color:'black'}}>Code licensed MIT, docs CC BY 3.0.</p>
+          <p style={{color:'black'}}>Currently v5.3.3.     </p>
         </div>
         {/* links */}
         <div className='d-flex flex-column'>
-          <h5>Links</h5>
+          <h5 style={{color:'black'}}>Links</h5>
           <Link to={'/'} style={{textDecoration:'none', color:'black'}}>Landing page</Link>
           <Link to={'/home'} style={{textDecoration:'none', color:'black'}}>Home page</Link>
           <Link to={'/history'} style={{textDecoration:'none', color:'black'}}>Watch History </Link>
         </div>
         {/* guides */}
         <div className='d-flex flex-column'>
-          <h5>Guides</h5>
-          <a style={{textDecoration:'none', color:'black'}} target='blank'  href="https://react.dev/" >React</a>
+          <h5 style={{color:'black'}}>Guides</h5>
+          <a style={{textDecoration:'none', color:'black'}} target='blank'  href="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRj9E5QZmfqfmUr2WZpI_9abkPDOhQczHZx4g&s" >React</a>
           <a style={{textDecoration:'none', color:'black'}} target='blank'  href="https://react-bootstrap.netlify.app/">React Bootstrap</a>
           <a style={{textDecoration:'none', color:'black'}} target='blank' href="https://www.npmjs.com/package/react-router-dom">React Router</a>
         </div>
         {/* contact */}
         <div className='d-flex flex-column'>
-          <h5>Contact Us</h5>
+          <h5 style={{color:'black'}} >Contact Us</h5>
           <div className='d-flex'>
               <input type="text" placeholder='enter your email here..' className='form-control me-2' />
               <button className='btn btn-info'><i class="fa-solid fa-arrow-right"></i></button>
           </div>
           <div className='d-flex justify-content-between mt-3'>
-            <a style={{textDecoration:'none', color:'white'}} target='_blank' href="https://en.wikipedia.org/wiki/Twitter"><i class="fa-brands fa-twitter"></i></a>
-            <a style={{textDecoration:'none', color:'white'}} target='_blank' href="https://www.instagram.com/"><i class="fa-brands fa-instagram"></i></a>
-            <a style={{textDecoration:'none', color:'white'}} target='_blank' href="https://www.facebook.com/"><i class="fa-brands fa-facebook"></i></a>
-            <a style={{textDecoration:'none', color:'white'}} target='_blank' href="https://www.linkedin.com/"><i class="fa-brands fa-linkedin"></i></a>
-            <a style={{textDecoration:'none', color:'white'}} target='_blank' href="https://github.com/"><i class="fa-brands fa-github"></i></a>
-            <a style={{textDecoration:'none', color:'white'}} target='_blank' href="https://www.call.com/"><i class="fa-solid fa-phone"></i></a>
+            <a style={{textDecoration:'none', color:'black'}} target='_blank' href="https://en.wikipedia.org/wiki/Twitter"><i class="fa-brands fa-twitter"></i></a>
+            <a style={{textDecoration:'none'}} target='_blank' href="https://www.instagram.com/"><i class="fa-brands fa-instagram"></i></a>
+            <a style={{textDecoration:'none', color:'black'}} target='_blank' href="https://www.facebook.com/"><i class="fa-brands fa-facebook"></i></a>
+            <a style={{textDecoration:'none'}} target='_blank' href="https://www.linkedin.com/"><i class="fa-brands fa-linkedin"></i></a>
+            <a style={{textDecoration:'none', color:'black'}} target='_blank' href="https://github.com/"><i class="fa-brands fa-github"></i></a>
+            <a style={{textDecoration:'none'}} target='_blank' href="https://www.call.com/"><i class="fa-solid fa-phone"></i></a>
           </div>
         </div>
       </div>
-      <p className='text-center mt-3'>Copyright &copy; May 2024 Batch, Media Player. Build with React.</p>
+      <p className='text-center mt-3 ' style={{color:'black'}}>©2025 Premium Brands Opco LLC All Rights Reserved.</p>
     </div>
+    </footer>
   )
 }
 

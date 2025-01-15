@@ -17,18 +17,18 @@ function Home() {
     <>
     <div className=" text-black text-left mb-4 py-5  " id="home">
       <Container className='mt-5 py-5 '>
-        <h1>Get up to 30% Off</h1>
-        <h1>New Arrivals</h1>
+        <h1 className='text-black'>Get up to 30% Off</h1>
+        <h1 className='text-black' >New Arrivals</h1>
         {/* <p className="lead">The best place to enjoy your favorite coffee</p> */}
         <Button variant="warning" href="#menu">
           {/* Shop Now */}
-          <Link to={'/home'} className='btn btn-wzrning'>Shop Now</Link>
+          <Link to={'/home'} className='btn btn-warning text-black'>Shop Now</Link>
         </Button>
       </Container>
  </div>
  <div>
  <Container className="py-5" id="menu">
-      <h2 className="text-center text-black mb-4">New Arrivals</h2>
+      <h2 className="text-center text-black mb-4"><em>New Arrivals</em></h2>
       <Row>
         <Col md={3}>
           <Card className="mb-3 " style={{width:'100%'}}>
@@ -39,9 +39,10 @@ function Home() {
               style={{height:'290px'}}
             />
             <Card.Body className='bg-warning text-black'>
+              
               <Card.Title className='text-center  '>Jaipuri Adaah</Card.Title>
               <Card.Text className='text-center '>₹ 699</Card.Text>
-            </Card.Body>
+           </Card.Body>
           </Card>
         </Col>
 

@@ -76,15 +76,15 @@ const Category = ({setDeleteResponseFromCategory}) => {
     //API call to update the categoty
     await updateCategoryAPI(categoryDetails)
     getAllCategories()
-     const result=await removeVideoAPI(imageDetails?.id)
-     setDeleteResponseFromCategory(result)
+    //  const result=await removeVideoAPI(imageDetails?.id)
+    //  setDeleteResponseFromCategory(result)
       }
     
   return (
     <>
    <div className='d-flex justify-content-between align-items-center' >  
     <h3>Wishlist  <i style={{ color: 'red' }} class="fa-regular fa-heart"></i> </h3>
-    <button onClick={handleShow } className='btn btn-info ms-3 rounded-circle fw-bolder fs-5'>+</button>
+    <button onClick={handleShow } className='btn btn-info ms-3 rounded-circle fw-bolder fs-5 mb-3'>+</button>
     </div>
     {/* Displaying all Categories */}
     <div className='container-fluid mb-3'>
@@ -102,7 +102,7 @@ const Category = ({setDeleteResponseFromCategory}) => {
             {
               categoryDetails?.allImages?.length>0 && 
                  categoryDetails?.allImages?.map(image=>(
-                  <div key={image?.id} className='col-lg-4'>
+                  <div key={image?.id} className='col-lg-4 me-5'>
                     {/* video cards */}
                     <VideoCard insideCategory={true} displayData={image}/>
                    </div>

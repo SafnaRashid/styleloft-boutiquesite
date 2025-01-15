@@ -6,7 +6,7 @@ import logo from '../assets/logo.png'
 const Header = () => {
   return (
     
-      <Navbar  style={{zIndex:1}}  expand="lg" className="bg-warning  w-100 ">
+      <Navbar  style={{zIndex:1}}  expand="lg" className="bg-warning  w-100  ">
           <Container>
             <Link to={'/'} style={{textDecoration:'none'}}>
            < Navbar.Brand>
@@ -17,11 +17,12 @@ const Header = () => {
             
            
         <Navbar.Collapse id="basic-navbar-nav">
-          <Nav className="ms-auto">
-            <Nav.Link href="/home">Home</Nav.Link>
-            <Nav.Link href="/">About</Nav.Link>
-            <Nav.Link href="/history"><i class="fa-solid fa-cart-shopping"></i></Nav.Link>
+          <Nav className="ms-auto ">
            
+             <Link to={'/home'} style={{textDecoration:'none' }} className='mx-2'>Home</Link>
+             <Link to={'/'} style={{textDecoration:'none'}} className='mx-2'>About</Link>
+             <Link to={'/history'} style={{textDecoration:'none'}} className='mx-2'><i class="fa-solid fa-cart-shopping"></i></Link>
+
           </Nav>
         </Navbar.Collapse>
           </Container>
